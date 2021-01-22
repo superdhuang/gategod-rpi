@@ -18,12 +18,12 @@ def openGate():
 
 subscriber = pubsub.SubscriberClient()
 topic_name = 'projects/{project_id}/topics/{topic}'.format(
-    project_id='PROJECT_ID',
-    topic='TOPIC',  
+    project_id='gategod-armor',
+    topic='yanji',  
 )
 subscription_name = 'projects/{project_id}/subscriptions/{sub}'.format(
-    project_id='PROJECT_ID',
-    sub='subscription name',
+    project_id='gategod-armor',
+    sub='sub_name_yanji',
 )
 
 # need to create subscription on gcloud
@@ -40,6 +40,5 @@ subscription = subscriber.subscribe(subscription_name, callback=callback)
 print('Listening for messages on {}'.format(subscription_name))
 while True:
     time.sleep(60)
-
 
 GPIO.cleanup()
