@@ -2,6 +2,7 @@
 requirements:
 1. raspberry pi OS
 2. user: pi
+3. pyhon 3.7 (default in raspberry pi OS)
 
 install:
 in /home/pi/gategod
